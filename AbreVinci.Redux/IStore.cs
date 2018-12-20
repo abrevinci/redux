@@ -11,6 +11,7 @@ namespace AbreVinci.Redux
 		IObservable<TState> SelectStateSlice<TState>(string name);
 
 		void Dispatch(IAction action);
+
 		void AddStateSlice<TState>(string name, TState initialState, Reducer<TState> reducer);
 		void RemoveStateSlice(string name);
 	}
