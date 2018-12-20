@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright 2018 AbreVinci Digital AB, all rights reserved
+
+using System;
 using JetBrains.Annotations;
 
 namespace AbreVinci.Redux

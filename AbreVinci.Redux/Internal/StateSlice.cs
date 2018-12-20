@@ -1,5 +1,6 @@
-﻿using System;
-using System.Reactive.Linq;
+﻿// Copyright 2018 AbreVinci Digital AB, all rights reserved
+
+using System;
 using System.Reactive.Subjects;
 
 namespace AbreVinci.Redux.Internal

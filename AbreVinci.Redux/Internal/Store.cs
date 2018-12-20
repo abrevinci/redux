@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright 2018 AbreVinci Digital AB, all rights reserved
+
+using System;
 using System.Collections.Generic;
 using System.Reactive.Linq;
 
@@ -16,7 +18,7 @@ namespace AbreVinci.Redux.Internal
 		public IObservable<TState> SelectStateSlice<TState>(string name)
 		{
 			return _stateSlicesByName.TryGetValue(name, out var s) && s is StateSlice<TState> stateSlice ? 
-				stateSlice.State.DistinctUntilChanged().Publish() : 
+				stateSlice.State.Do(_ => {}).DistinctUntilChanged().Replay(1).RefCount() : 
 				null;
 		}
 
