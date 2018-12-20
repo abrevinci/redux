@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbreVinci.Redux", "AbreVinci.Redux\AbreVinci.Redux.csproj", "{9A2F0A33-56EF-4015-857C-03939E056E78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{53EF4F7C-BA25-43DD-8B91-27C8E44E2F7E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{442761AD-7685-4849-A6B8-0F1E27457580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Wpf", "Examples\TodoApp.Wpf\TodoApp.Wpf.csproj", "{53EF4F7C-BA25-43DD-8B91-27C8E44E2F7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53EF4F7C-BA25-43DD-8B91-27C8E44E2F7E} = {442761AD-7685-4849-A6B8-0F1E27457580}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C95F75C8-D15F-4BBF-A451-A41EA1A54A0A}

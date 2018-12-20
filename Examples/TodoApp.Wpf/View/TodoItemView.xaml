@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:TodoApp.Wpf.ViewModel">
+    
+    <DataTemplate DataType="{x:Type vm:TodoItemViewModel}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <CheckBox Grid.Column="0" Command="{Binding ToggleChecked}" IsChecked="{Binding IsChecked, Mode=OneWay}"/>
+            <TextBlock Grid.Column="1" Text="{Binding Title}"/>
+            <Button Grid.Column="2" Command="{Binding Delete}">Delete</Button>
+        </Grid>
+    </DataTemplate>
+
+</ResourceDictionary>
